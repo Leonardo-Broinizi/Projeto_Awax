@@ -313,13 +313,14 @@ div.menu li a:hover, div.menu li.active a {
 
 
 
-
 .bg-team {
+    background-color: #333;
     background-image: url('../images/bg.jpg');
     background-size: cover;
     background-position: center;
-    padding: 0px;
+    padding: 0px;  
 }
+
 .section-team-area {
     background-color: rgba(0, 0, 0, 0.8);
     padding-top:50px;
@@ -454,26 +455,57 @@ div.menu li a:hover, div.menu li.active a {
     line-height: 20px;
     font-size: 14px;
 }
-
-
-.section-clients .sliders {
-    min-width: 200vw;
-    height: 100%;
-}
-.section-clients .slide {
+.slider-clients {
+    padding: 0px; 
     width: 100vw;
     height: 100%;
-    display: inline-block;
+    overflow:hidden;
+    border: 1px solid red;
+}
+.section-clients .sliders {
+    border: 1px solid rgb(187, 255, 0);
     display: flex;
+    align-items: center;
+    width: 300vw;
+}
+.section-clients .slide {
+    height: 100%;
+    display: flex;
+    margin-left: 0;
+    border: 1px solid rgb(255, 0, 170);
 }
 .section-clients .slidearea {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+}
+/* 
+.section-team .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+    .section-team .slide {
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 20px;
+}
+.section-team .slidearea {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
     align-items: center;
+    color: #000;
+    padding: 30px;
 }
-
+ */
 
 
 
