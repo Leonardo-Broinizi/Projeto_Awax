@@ -544,6 +544,180 @@ img.quote {
 .section-price--table > .button.active {
     background-color: #b28756;
 }
+
+
+
+
+
+.section-plans--box {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding: 0px 40px 40px 40px;
+    min-width: 800px
+}
+.section-plans .slidearea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-plans--feature {
+    display: flex;
+}
+.section-plans--feature img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+.section-feature--text {
+    line-height: 22px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+.section-feature--text .feature-text--title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+}
+.section-feature--text .feature-text--descript {
+    color: #999;
+    font-size: 12px;
+}
+
+.section-plans--area .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    margin:30px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-plans--area .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.section-plans--area .pointer.active {
+    background-color: #b28756;
+}
+.section-plans--area .button {
+    margin-left: calc(50% - 75px);
+}
+
+
+
+
+.section-numbers {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.section-numbers--box {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    text-align: center;
+    width: 180px;
+    margin: 25px 10px;
+}
+.section-numbers--box .box-number {
+    color: #b28756;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 5px;
+}
+.box-numbers--underline {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 10px;
+    border-bottom: 1px solid #999;
+}
+.section-numbers--box .box-title {
+    text-transform: uppercase;
+    height: 50px;
+    padding: 5px 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.section-numbers--box .box-desc {
+    font-size: 11px;
+    line-height: 17px;
+    color: #ccc;
+}
+
+
+
+
+.default.white.social {
+    padding: 20px;
+}
+.section-social, .section-social > .about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-social > img {
+    margin-left: 55px;
+}
+.about-us {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #999;
+}
+.about-us > img {
+    margin-right: 20px;
+}
+.section-social--icons {
+    display: flex;
+    align-items: center;
+    color: #999;
+}
+.section-social--icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 5px;
+}
+.twitter {
+    background-color: aqua;
+}
+.linkedin {
+    background-color: royalblue;
+}
+.facebook {
+    background-color: blue;
+}
+.googleplus {
+    background-color: orangered;
+}
+.pinterest {
+    background-color: red;
+}
+.section-social--icons a:hover {
+    background-color: #b28756;
+}
+
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.nome-email > div {
+    display: inline;
+}
 /* 
     FIM DO TRECHO DE EXERCÍCIO, FEITO SEM AUXÍLIO.
 */
