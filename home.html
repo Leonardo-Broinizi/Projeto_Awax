@@ -551,16 +551,25 @@
             <div class="section-form">
                 <div class="section-title">Contact  us</div>
                 <div class="section-desc">Our agency located in melbourne australia</div>
-                <form method="get" action="#">
-                    <div class="nome-email">
-                        <div><label for="iname"></label>
-                        <input type="text" name="name" id="iname" value="NAME" required></div>
-                        <div><label for="iemail"></label>
-                        <input type="email" name="email"  id="iemail" value="EMAIL" required></div>
-                    </div>
-                    <div><label for="isub"></label>
-                        <input type="text" name="sub" id="isub" ></div>
-                </form>
+                <div id="section-form--box">
+                    <form method="get" action="#">
+                        <div class="nome-email">
+                            <input type="text" name="name" id="iname" value="NAME" required>
+                            <input type="email" name="email"  id="iemail" value="EMAIL" required>
+                        </div>
+                        <div>
+                            <label for="isub"></label>
+                            <input type="text" name="sub" id="isub" value="SUBJECT">
+                        </div>
+                        <div>
+                            <label for="imes"></label>
+                            <input type="text" name="mes"  id="imes" value="MESSAGE">
+                        </div>
+                    </form>
+                    <a href="#" class="button">Send Message</a>
+
+
+                </div>
             </div>
         </section>
     </main>
