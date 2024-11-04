@@ -133,7 +133,6 @@ div.menu li a:hover, div.menu li.active a {
 .default {
     padding-top: 50px;
     padding-bottom: 50px;
-
 }
 .default .section-title, 
 .default .section-desc {
@@ -192,6 +191,8 @@ div.menu li a:hover, div.menu li.active a {
 */
 .section-aboutus {
     display: flex;
+    max-width: 1140px;
+    margin: auto;
 }
 .section-aboutus--left {
     flex: 1;
@@ -747,3 +748,77 @@ img.quote {
 /* 
     FIM DO TRECHO DE EXERCÍCIO, FEITO SEM AUXÍLIO.
 */
+
+.section-map {
+    background-image: url('/assets/images/mapa.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0px;
+
+}
+.section-map--area {
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+.section-map--info {
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    color: #000;
+}
+.section-map--info-item {
+    display: flex;
+    align-items: center;
+    color: #999;
+    margin-bottom: 10px;
+}
+.section-map--info-item-img {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #999;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+.section-map--info-item-img img {
+    width: 15px;
+    height: auto;
+}
+
+
+
+.footer-area {
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.footer-area--social {
+    
+}
+.footer-area--social-icons {
+    display: flex;
+}
+.footer-area--social-icons > .pointer {
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(77, 77, 77);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-area--social-icons > .pointer > img {
+    width: 10px;
+    height: auto;
+}
+.footer-area--social .pointer:hover {
+    background-color: #b28756;
+}
+.footer-area--social .pointer.active {
+    background-color: #b28756;
+}
