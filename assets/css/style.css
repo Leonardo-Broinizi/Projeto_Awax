@@ -804,7 +804,7 @@ img.quote {
     display: flex;
 }
 .footer-area--social-icons > .pointer {
-    padding: 5px;
+    padding: 8px;
     margin: 5px;
     background-color: rgb(77, 77, 77);
     border-radius: 50%;
@@ -813,7 +813,6 @@ img.quote {
     justify-content: center;
 }
 .footer-area--social-icons > .pointer > img {
-    width: 10px;
     height: auto;
 }
 .footer-area--social .pointer:hover {
