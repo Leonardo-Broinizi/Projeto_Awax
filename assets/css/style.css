@@ -74,6 +74,9 @@ div.menu li a:hover, div.menu li.active a {
     margin-top: 30px;
     border-radius: 20px;
 }
+.button:hover {
+    background-color: #96724a;
+}
 .banner {
     height: calc(100vh - 100px);
     background-color: #333;
@@ -500,7 +503,7 @@ img.quote {
     align-items: center;
     justify-content: center;
 }
-.white-body > img {
+.white-body > div {
     margin-left: 55px;
 }
 
@@ -609,7 +612,10 @@ img.quote {
     background-color: #b28756;
 }
 .section-plans--area .button {
-    margin-left: calc(50% - 75px);
+    display: block;
+    margin: auto;
+    width: fit-content;
+    margin-top: 30px;
 }
 
 
@@ -793,6 +799,8 @@ img.quote {
 }
 
 
+/* Outro trecho feito sem auxílio, como exercício */
+
 footer {
     background-color: #000;
 }
@@ -821,6 +829,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 30px;
+    width: 30px;
 }
 .footer-area--social-icons > div {
     display: flex;
@@ -873,9 +883,10 @@ footer {
     margin-bottom: 10px;
 }
 
+/* Fim do trecho sem auxílio */
 
 
-@media (min-width: 0px) and (max-width:800px) {
+@media (min-width: 450px) and (max-width:800px) {
     .logo {
         margin-left: 30px;
     }
@@ -897,7 +908,7 @@ footer {
     .menu ul {
         flex-direction: column;
     }
-    .menu li a {
+    div.menu li a {
         font-weight: bold;
         height: 80px;
         font-size: 27px;
@@ -940,11 +951,27 @@ footer {
     }
 
 
+    .section-price {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section-price--table {
+        width: 350px;
+    }
+
+
+    .section-plans--box {
+        display: flex;
+        flex-direction: column;
+    }
+    .section-plans--box > div {
+        margin-top: 40px;
+    }
+
 
     .section-map {
         padding-left: 30px;
         padding-right: 30px;
-
     }
     .section-map--area {
         width: auto;
@@ -964,7 +991,7 @@ footer {
 
 
 
-@media (min-width: 0px) and (max-width:800px) {
+@media (max-width:450px) {
     .logo {
         margin-left: 30px;
     }
@@ -978,7 +1005,7 @@ footer {
         position: absolute;
         z-index: 99;
         background-color: rgba(0, 0, 0, 0.9);
-        width: 70vw;
+        width: 80vw;
         height: calc(100vh - 100px);
         top:100px;
         right: 0;
@@ -986,19 +1013,29 @@ footer {
     .menu ul {
         flex-direction: column;
     }
-    .menu li a {
+    div.menu li a {
         font-weight: bold;
-        height: 80px;
-        font-size: 27px;
-        margin-left: 50px;
+        height: 60px;
+        font-size: 20px;
+        margin-left: 30px;
         border: 0;
     }
+
+
     
 
     .menu nav li.active a {
         border: 0;
         color: #b28756;
     }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+    .banner h2 {
+        font-size: 17px;
+    }
+
 
     .section-aboutus {
         flex-direction: column;
@@ -1008,32 +1045,60 @@ footer {
         margin-right: 30px;
         margin-bottom: 30px;
     }
+    .section-aboutus--right img {
+        width: 100%;
+    }
 
     .section-aboutus--right {
         width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     .section-services {
         flex-wrap: wrap;
     }
     .section-service {
-        min-width: 50%;
+        min-width: 100%;
         margin-bottom: 30px;
     }
     .section-service:first-child {
         border-left: 0;
     }
 
-    .section-team {
-        max-width: 580px;
+    
+
+    .section-projects--filters {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .section-projects--photo {
+        width: 320px;
+    }
+    .section-projects--photoarea {
+        width: 300px;
+        height:190px;
     }
 
+
+    .section-team {
+        max-width: 280px;
+    }
+
+
+    .section-price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-price--table {
+        width: 350px;
+    }
 
 
     .section-map {
         padding-left: 30px;
         padding-right: 30px;
-
     }
     .section-map--area {
         width: auto;
