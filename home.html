@@ -19,8 +19,8 @@
                 <div class="logoimg"></div>
             </div>
             <div class="menu">
-                <img class="menu-opener" src="assets/images/menu.png" alt="">
-                <nav>
+                <img class="menu-opener" onclick="chama_menu()" src="assets/images/menu.png" alt="">
+                <nav id="menu-button">
                     <ul>
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="">About us</a></li>
@@ -477,10 +477,7 @@
                                                 <img src="assets/images/check.png" alt="">
                                                 <div class="section-feature--text">
                                                     <div class="feature-text--title">First Feature</div>
-                                                    <div class="feature-text--descript">First Feature Praesent metus uma
-                                                        feugiat a placerat lementum at leo.Qusque vel fermentum ipsum.
-                                                        Nulla at facilisis est.<br>- FREATURE ONE<br>- FEATURE TWO<br>-
-                                                        FRATURE THREE</div>
+                                                    <div class="feature-text--descript">First Feature Praesent metus uma feugiat a placerat lemen sfdkjf at leo.Qusque vel fermentum ipsum. Nulla at facilisis est.<br>- FREATURE ONE<br>- FEATURE TWO<br> - FRATURE THREE</div>
                                                 </div>
                                             </div>
                                             <div class="section-plans--feature">
@@ -677,6 +674,18 @@
             </div>
         </div>
     </footer>
-</body>
+       
+    
+    <script>
+        function chama_menu() {
+            const button_menu = document.getElementById("menu-button");
 
+            if (button_menu.style.display === "none" || button_menu.style.display === "") {
+                button_menu.style.display = "block";
+            } else  {
+                button_menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
 </html>
